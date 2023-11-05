@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+    /* background-color: #000; */
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background: url(https://wallpaperaccess.com/full/1642280.jpg); */
+    background-color: #000;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+
+#nav{
+    width: 100%;
+    height: 90px;
+    padding: 0px 65px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: black; */
+    backface-visibility: visible;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    /* background-color: none; */
+}
+
+#nav h4:hover{
+    color: #F959AE;
+    cursor: pointer;
+}
+
+#ctr{
+    display: flex;
+    gap: 30px;
+    margin-right: 25%;
+}
+
+#ctr h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#nav img{
+    width: 100px;
+    cursor: pointer;
+}
+
+#nav a{
+    color: #000;
+    font-weight: 600;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #fff;
+    background: linear-gradient(to right, #F566AB, #DD9E68);
+    font-family: sfp;
+}
+
+#nav a:hover{
+    scale: 1.1;
+    transition: .5s ease;
+}
+
+
+#left{
+    width: 65%;
+    height: 100%;
+}
+
+#right{
+    padding-right: 10px;
+    width: 35%;
+    height: 100%;
+    display: flex;
+
+}
+
+#con{
+    margin-top: 120px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#con h1{
+    font-family: Druk;
+    text-transform: uppercase;
+    font-size: 130px;
+    /* letter-spacing: -0.5mm; */
+    font-weight: 600;
+    line-height: 1.01;
+    font-style: bold;
+    color: #F2F3FF;
+}
+
+#con span{
+    padding: 5px;
+    font-family: Druk;
+    background: linear-gradient(to bottom, #558BAD, #558BAD,  #fff,  #CD98CE, #fff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#con p{
+    width: 70%;
+    font-size: 17px;
+}
+
+#con a{
+    color: #000;
+    font-weight: 600;
+    padding: 15px 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 24%;
+    background: linear-gradient(to right,#F16DA2, #DE9C6A);
+    font-family: sfp;
+
+}
+
+#con a:hover{
+    scale: 1.1;
+    transition: .5s ease;
+}
+
+#lright{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.boxes{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+    position: relative; 
+    top: -100%;
+    animation-name: down;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes down {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+
+.boxes:nth-child(2){
+    animation-name: up;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes up {
+    100%{
+        top: -100%;
+    }
+    0%{
+        top: 10%;
+    }
+}
+
+.box img{
+    width: 150px;
+    border-radius: 15px;
+}
+
+#bar{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #F568A9, #DD8B72, #9FCBAD);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.rekha{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    
+    animation-name: left;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#bar img{
+    width: 100%;
+
+}
+
+
+
+@keyframes left {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-120%);
+    }
+}
+
+
+
+#page2{
+    width: 100%;
+    height: 140%;
+    background-color: #000;
+    padding: 20% 50px;
+}
+
+#pup{
+    display: flex;
+    gap: 70px;
+
+}
+
+#pup h1{
+    width: 90%;
+    font-family: agtight;
+    font-size: 45px;
+    
+}
+
+#pup p{
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+#pup span{
+    font-family: agtight;
+    background: linear-gradient(to bottom, #558BAD, #558BAD, #fff, #C88DC8, #fff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#cards{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cards .card{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.card img{
+    width: 65%;
+}
+
+.card h2{
+    font-family: sfp;
+}
+
+.card p{
+    font-size: 14px;
+}
+
+#page3{
+    width: 100%;
+    height: 180%;
+    text-align: center;
+    background-color: #000;
+}
+
+#page3>h1{
+    font-family: Druk;
+    text-transform: uppercase;
+    font-size: 280px;
+    color: #F2F3FF;
+}
+
+#cubeco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.cube{
+    width: 50%
+}
+
+.cube video{
+    object-fit: cover;
+    object-position: center;
+}
+
+.co{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 90px;
+}
+
+.saman{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.saman:hover{
+    opacity: 1;
+}
+
+.co .saman h1{
+    font-weight: 400;
+    font-size: 35px;
+}
+.co .saman p{
+    margin: 5px auto;
+    font-size: 15px;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F562AC;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+
+::-webkit-scrollbar:hover{
+    width: 8px;
+}
+
+#cre{
+    overflow: hidden;
+    background-color: #000;
+}
+
+
+#creator{
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#creator h1{
+    font-size: 150px;
+    font-family: Druk;
+    text-transform: uppercase;
+
+    
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-109%);
+    }
+}
+
+#dude{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    background-color: #000;
+}
+
+#baba{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#baba img{
+    width: 500px;
+    margin-left: 50px;
+}
+
+#dudeco{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.dudeup{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.dudeup .arr{
+    display: flex;
+    text-align: center;
+    gap: 5px;
+}
+
+.dudeup h5{
+    text-transform: uppercase;
+    margin-left: 21px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.arr i, h6{
+    color: #DC4F9A;
+    font-size: 15px;
+}
+
+
+.dudeup p{
+    font-size: 10px;
+    margin-left: 9px;
+    opacity: .5;
+}
+
+.dudedown{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#info img{
+    width: 20%;
+}
+
+#info h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #F2F3FF;
+}
+
+#info h4{
+    font-size: 20px;
+    font-weight: 300;
+    color: #F2F3FF;
+    opacity: .6;
+}
+
+#page4{
+    width: 100%;
+    height: 115%;
+    padding: 50px;
+    background-color: #000;
+    display: flex;
+}
+
+#leftpg{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#leftpg h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: agtight;
+    line-height: 1;
+}
+
+#leftpg span{
+    font-family: agtight;
+    background: linear-gradient(to bottom, #558BAD, #fff, #CC96CD);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#pgcon{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#likhahua{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#likhahua h4{
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#likhahua p{
+    font-size: 17px;
+    margin: 7px auto;
+}
+
+#leftpg a{
+    color: #000;
+    font-weight: 600;
+    padding: 15px 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 28%;
+    background: linear-gradient(to right,#F16DA2, #DE9C6A);
+    font-family: sfp;
+
+}
+
+#leftpg a:hover{
+    scale: 1.1;
+    transition: .5s ease;
+}
+
+
+#likhahua:hover{
+    opacity: 1;
+}
+
+#mobile{
+    width: 20%;
+    position: absolute;
+    border-radius: 30%;
+    left: 55%;
+}
+
+#mobile video{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+
+}
+
+#mobile>video{
+    position: absolute;
+    animation-name: trsp;
+    animation-delay: 5s;
+    animation-duration: 14s;
+    animation-fill-mode: forwards;
+}
+
+
+#mobile img{
+    width: 106%;
+    position: absolute; 
+    left: -5%;
+    top: -3%;
+    z-index: 99;
+}
+
+#tndimg{
+    width: 15%;
+    margin-top: 120px;
+    margin-left: 200px;
+}
+
+#tndimg img{
+    width: 100%;
+}
+
+@keyframes trsp {
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#page5{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#page5 img{
+    width: 100%;
+    position: absolute;
+}
+
+#concl{
+    width: 45%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    margin-left: 50%;
+}
+
+#concl p{
+    font-size: 30px;
+}
+
+#lm{
+    display: flex;
+    align-items: center;
+
+}
+
+#lm i{
+    font-size: 25px;
+    font-family: sfp;
+    color: #DE529D;
+}
+
+#lm a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #DE529D;   
+}
+
+#companies{
+    width: 100%;
+    padding-top: 110px;
+    display: flex;
+}
+
+#phot img{
+    position: absolute;
+    animation-name: brands;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes brands {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -50%;
+    }
+}
+
+@font-face {
+    font-family: agtight;
+    src: url(Fonts/6282680a6e5f0ab251eaf56a_Agrandir-TightBlack\ \(1\).otf);
+        
+}
+
+@font-face {
+    font-family: druk;
+    src: url(Fonts/6282680a6e5f0a4d08eaf55f_DrukCondCy-SuperItalic-Desktop.otf);
+}
+
+@font-face {
+    font-family: sfp;
+    src: url(Fonts/SF\ PIXELATE.TTF);
+}
